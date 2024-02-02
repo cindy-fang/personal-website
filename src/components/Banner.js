@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Developer", "New Grad", "and...", "wait for it...", "...", "a", "long boi."];
+    const toRotate = ["Software Dev", "New Grad", "Community Leader", "Student Advocate"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     const period = 2000;
@@ -45,13 +45,13 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={5} md={6} xl={7}>
-                        <span className="tagline">Hello World :D</span>
-                        <h1>{`Hi I'm Cindy, ` } <br /><span className="wrap">{text}</span> </h1>
+                    <Col xs={4} md={6} xl={7}>
+                        <span className="tagline">Hello World 🌎</span>
+                        <h1>{`I'm Cindy 🙋🏻 ` } <br /><span className="wrap">{text}</span> </h1>
                         <p>I am a 5th year Computer Science student at TorontoMet University. I am very involved in both the student and tech communities, having co-chaired Canada's largest student-led conference with a team of 40+ members! I also enjoy participating at hackathons, where I can meet new hackers and create cool projects in a fun space. Fun fact about me is that I'm quite interested in Economics, and I just finished all my requirements for a minor at TMU. I am looking for 2024 Spring/Summer full time opportunities. Feel feel to connect or reach out!</p>
-                        <button onClick={() => window.location.href = '#skills'}>Read more<ArrowRightCircle size={25}></ArrowRightCircle> </button>
+                        <button onClick={() => window.location.href = '#connect'}>Send a Message<ArrowRightCircle size={25}></ArrowRightCircle> </button>
                     </Col>
-                    <Col xs={4} md={6} xl={5}>
+                    <Col xs={3} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" class="image-fluid" />
                     </Col>
                 </Row>

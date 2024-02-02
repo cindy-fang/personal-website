@@ -7,26 +7,18 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-import cscu1 from "../assets/img/cscu1.JPG";
-import cscu2 from "../assets/img/cscu2.JPG";
-import cscu3 from "../assets/img/cscu3.JPG";
-import cscu4 from "../assets/img/cscu4.jpg";
-import cscu5 from "../assets/img/cscu5.JPG";
-import cscu7 from "../assets/img/cscu7.JPG";
-import cscu8 from "../assets/img/cscu8.JPG";
-
-import cutc1 from "../assets/img/cutc1.JPG";
-import cutc2 from "../assets/img/cutc2.JPEG";
-
+import cscu1 from "../assets/img/cscu2.JPG";
+import cscu2 from "../assets/img/cscu3.JPG";
+import cscu3 from "../assets/img/cscu5.JPG";
+import cscu4 from "../assets/img/cscu7.JPG";
+import cscu5 from "../assets/img/cscu8.JPG";
+import cutc from "../assets/img/cutc1.JPG";
 import ibm from "../assets/img/ibm.jpg";
-
 import pilot from "../assets/img/pilot.JPG";
 import hackmit from "../assets/img/hackmit.jpg";
-
-
 import verto from "../assets/img/verto.jpg";
 import bell1 from "../assets/img/bell1.jpg";
-import tecsys1 from "../assets/img/tecsys2.jpg";
+import tecsys from "../assets/img/tecsys2.jpg";
 
 
 export const Projects = () => {
@@ -67,22 +59,22 @@ export const Projects = () => {
         {
             title: "President",
             description: "Computer Science Course Union",
-            imgUrl: cscu8,
+            imgUrl: cscu5,
         },
         {
             title: "Co-Chair",
             description: "Canadian Undergrad Tech Conference",
-            imgUrl: cutc1,
+            imgUrl: cutc,
         },
         {
             title: "VP Operations",
             description: "Computer Science Course Union",
-            imgUrl: cscu3,
+            imgUrl: cscu2,
         },
         {
             title: "VP Careers & Co-op",
             description: "Computer Science Course Union",
-            imgUrl: cscu5,
+            imgUrl: cscu3,
         },
         {
             title: "Marketing Lead",
@@ -92,12 +84,12 @@ export const Projects = () => {
         {
             title: "2nd Year Rep",
             description: "Computer Science Course Union",
-            imgUrl: cscu2,
+            imgUrl: cscu1,
         },
         {
             title: "1st Year Rep",
             description: "Computer Science Course Union",
-            imgUrl: cscu7,
+            imgUrl: cscu4,
         },
     ];
 
@@ -105,7 +97,7 @@ export const Projects = () => {
         {
             title: "Backend Dev Intern",
             description: "Tecsys",
-            imgUrl: tecsys1,
+            imgUrl: tecsys,
         },
         {
             title: "Site Reliability Intern",
