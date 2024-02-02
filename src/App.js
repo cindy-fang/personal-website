@@ -8,6 +8,8 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { ProjectCard } from "./components/ProjectCard";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Projects />
       <ProjectCard />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -10,34 +10,100 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const projects = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "PilotASD",
+            description: "TBA",
             imgUrl: projImg1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Face Identification & Recognition",
+            description: "",
             imgUrl: projImg3,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Medlingua",
+            description: "",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Music Genre Classification",
+            description: "Python",
+            imgUrl: projImg3,
+        },
+        {
+            title: "Inventory Tracker",
+            description: "",
             imgUrl: projImg1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Financial Literacy Helper",
+            description: "",
+            imgUrl: projImg2,
+        },
+    ];
+
+    const volunteering = [
+        {
+            title: "President",
+            description: "Computer Science Course Union",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Co-Chair",
+            description: "Canadian Undergrad Tech Conference",
             imgUrl: projImg2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "VP Operations",
+            description: "Computer Science Course Union",
             imgUrl: projImg3,
+        },
+        {
+            title: "Marketing Co-Chair",
+            description: "IBM Z",
+            imgUrl: projImg1,
+        },
+        {
+            title: "VP Careers & Co-op",
+            description: "Computer Science Course Union",
+            imgUrl: projImg2,
+        },
+        {
+            title: "2nd Year Rep",
+            description: "Computer Science Course Union",
+            imgUrl: projImg3,
+        },
+        {
+            title: "1st Year Rep",
+            description: "Computer Science Course Union",
+            imgUrl: projImg3,
+        },
+    ];
+
+    const work = [
+        {
+            title: "Backend Dev Intern",
+            description: "Tecsys",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Site Reliability Intern",
+            description: "Verto Health",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Software Dev Intern",
+            description: "Bell",
+            imgUrl: projImg3,
+        },
+        {
+            title: "Network Intern",
+            description: "Bell",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Student Intern",
+            description: "EFI",
+            imgUrl: projImg2,
         },
     ];
 
@@ -49,40 +115,62 @@ export const Projects = () => {
                 <TrackVisibility>
                 {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                    <h2>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2>Experience</h2>
+                    <p>Throughout my uni years, I was actively doing internships at various companies, while being involved in school and the tech community!</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Work Experiences</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Volunteering</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
                         <Row>
                             {
-                            projects.map((project, index) => {
+                            work.map((work, index) => {
                                 return (
                                 <ProjectCard
                                     key={index}
-                                    {...project}
+                                    {...work}
                                     />
                                 )
                             })
                             }
                         </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="section">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Tab.Pane eventKey="second">
+                        <Row>
+                            {
+                            projects.map((projects, index) => {
+                                return (
+                                <ProjectCard
+                                    key={index}
+                                    {...projects}
+                                    />
+                                )
+                            })
+                            }
+                        </Row>                        
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Row>
+                            {
+                            volunteering.map((volunteering, index) => {
+                                return (
+                                <ProjectCard
+                                    key={index}
+                                    {...volunteering}
+                                    />
+                                )
+                            })
+                            }
+                        </Row>                        
                         </Tab.Pane>
                     </Tab.Content>
                     </Tab.Container>
