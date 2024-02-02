@@ -1,8 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -19,39 +16,44 @@ import hackmit from "../assets/img/hackmit.jpg";
 import verto from "../assets/img/verto.jpg";
 import bell1 from "../assets/img/bell1.jpg";
 import tecsys from "../assets/img/tecsys2.jpg";
-
+import efi2 from "../assets/img/efi2.jpg";
+import bell2 from "../assets/img/bell2.jpg";
+import idol from "../assets/img/idol.jpg";
+import inventory from "../assets/img/inventory.jpg";
+import music1 from "../assets/img/music1.jpg";
+import rich from "../assets/img/rich.jpg";
 
 export const Projects = () => {
     const projects = [
         {
             title: "PilotASD",
-            description: "TBA",
+            description: "work in progress :)",
             imgUrl: pilot,
         },
         {
             title: "Face Identification & Recognition",
-            description: "",
-            imgUrl: projImg3,
+            description: "Python,OpenCV, annoy, vggface, MTCNN",
+            imgUrl: idol,
         },
         {
             title: "Medlingua",
-            description: "",
+            description: "Python, Fast API, SvelteKit, Codebox, Typescript",
             imgUrl: hackmit,
         },
         {
             title: "Music Genre Classification",
-            description: "Python",
-            imgUrl: projImg3,
+            description: "Python, NumPy, SciKit‑Learn, JupyterNotebook, Matplotlib",
+            imgUrl: music1,
         },
         {
             title: "Inventory Tracker",
-            description: "",
-            imgUrl: projImg1,
+            description: "JS,Handlebars, CSS, node.js, HTML, MongoDB, openweather API",
+            imgUrl: inventory,
         },
         {
             title: "Financial Literacy Helper",
-            description: "",
-            imgUrl: projImg2,
+            description: "JS,Handlebars, CSS, node.js, MongoDB",
+            imgUrl: rich,
         },
     ];
 
@@ -96,28 +98,28 @@ export const Projects = () => {
     const work = [
         {
             title: "Backend Dev Intern",
-            description: "Tecsys",
+            description: "Tecsys (2023)",
             imgUrl: tecsys,
         },
         {
             title: "Site Reliability Intern",
-            description: "Verto Health",
+            description: "Verto Health (2022)",
             imgUrl: verto,
         },
         {
             title: "Software Dev Intern",
-            description: "Bell",
+            description: "Bell (2022)",
             imgUrl: bell1,
         },
         {
             title: "Network Intern",
-            description: "Bell",
-            imgUrl: projImg1,
+            description: "Bell (2021)",
+            imgUrl: bell2,
         },
         {
             title: "Student Intern",
-            description: "EFI",
-            imgUrl: projImg2,
+            description: "EFI (2017)",
+            imgUrl: efi2,
         },
     ];
 
