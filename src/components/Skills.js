@@ -18,11 +18,6 @@ import docker from "../assets/img/docker.png";
 import agile from "../assets/img/agile.png";
 import mcrsft from "../assets/img/mcrsft.png";
 
-
-
-
-
-
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -56,7 +51,7 @@ export const Skills = () => {
                                 Skills
                             </h2>
                             <p>
-                                ma skillz.
+                                Some of my techy skillz.
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">

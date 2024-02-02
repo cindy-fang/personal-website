@@ -7,12 +7,34 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+import cscu1 from "../assets/img/cscu1.JPG";
+import cscu2 from "../assets/img/cscu2.JPG";
+import cscu3 from "../assets/img/cscu3.JPG";
+import cscu4 from "../assets/img/cscu4.jpg";
+import cscu5 from "../assets/img/cscu5.JPG";
+import cscu7 from "../assets/img/cscu7.JPG";
+import cscu8 from "../assets/img/cscu8.JPG";
+
+import cutc1 from "../assets/img/cutc1.JPG";
+import cutc2 from "../assets/img/cutc2.JPEG";
+
+import ibm from "../assets/img/ibm.jpg";
+
+import pilot from "../assets/img/pilot.JPG";
+import hackmit from "../assets/img/hackmit.jpg";
+
+
+import verto from "../assets/img/verto.jpg";
+import bell1 from "../assets/img/bell1.jpg";
+import tecsys1 from "../assets/img/tecsys2.jpg";
+
+
 export const Projects = () => {
     const projects = [
         {
             title: "PilotASD",
             description: "TBA",
-            imgUrl: projImg1,
+            imgUrl: pilot,
         },
         {
             title: "Face Identification & Recognition",
@@ -22,7 +44,7 @@ export const Projects = () => {
         {
             title: "Medlingua",
             description: "",
-            imgUrl: projImg2,
+            imgUrl: hackmit,
         },
         {
             title: "Music Genre Classification",
@@ -45,37 +67,37 @@ export const Projects = () => {
         {
             title: "President",
             description: "Computer Science Course Union",
-            imgUrl: projImg1,
+            imgUrl: cscu8,
         },
         {
             title: "Co-Chair",
             description: "Canadian Undergrad Tech Conference",
-            imgUrl: projImg2,
+            imgUrl: cutc1,
         },
         {
             title: "VP Operations",
             description: "Computer Science Course Union",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Marketing Co-Chair",
-            description: "IBM Z",
-            imgUrl: projImg1,
+            imgUrl: cscu3,
         },
         {
             title: "VP Careers & Co-op",
             description: "Computer Science Course Union",
-            imgUrl: projImg2,
+            imgUrl: cscu5,
+        },
+        {
+            title: "Marketing Lead",
+            description: "IBM Z",
+            imgUrl: ibm,
         },
         {
             title: "2nd Year Rep",
             description: "Computer Science Course Union",
-            imgUrl: projImg3,
+            imgUrl: cscu2,
         },
         {
             title: "1st Year Rep",
             description: "Computer Science Course Union",
-            imgUrl: projImg3,
+            imgUrl: cscu7,
         },
     ];
 
@@ -83,17 +105,17 @@ export const Projects = () => {
         {
             title: "Backend Dev Intern",
             description: "Tecsys",
-            imgUrl: projImg1,
+            imgUrl: tecsys1,
         },
         {
             title: "Site Reliability Intern",
             description: "Verto Health",
-            imgUrl: projImg2,
+            imgUrl: verto,
         },
         {
             title: "Software Dev Intern",
             description: "Bell",
-            imgUrl: projImg3,
+            imgUrl: bell1,
         },
         {
             title: "Network Intern",
