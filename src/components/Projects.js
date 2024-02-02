@@ -21,7 +21,7 @@ import bell2 from "../assets/img/bell2.jpg";
 import idol from "../assets/img/idol.jpg";
 import inventory from "../assets/img/inventory.jpg";
 import music1 from "../assets/img/music1.jpg";
-import rich from "../assets/img/rich.jpg";
+import rich from "../assets/img/rich2.jpg";
 
 export const Projects = () => {
     const projects = [
@@ -136,24 +136,24 @@ export const Projects = () => {
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                        <Nav.Link eventKey="first">Work Experiences</Nav.Link>
+                        <Nav.Link eventKey="first">Volunteering</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                         <Nav.Link eventKey="second">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="third">Volunteering</Nav.Link>
+                        <Nav.Link eventKey="third">Work Experience</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
                         <Row>
                             {
-                            work.map((work, index) => {
+                            volunteering.map((volunteering, index) => {
                                 return (
                                 <ProjectCard
                                     key={index}
-                                    {...work}
+                                    {...volunteering}
                                     />
                                 )
                             })
@@ -177,11 +177,11 @@ export const Projects = () => {
                         <Tab.Pane eventKey="third">
                         <Row>
                             {
-                            volunteering.map((volunteering, index) => {
+                            work.map((work, index) => {
                                 return (
                                 <ProjectCard
                                     key={index}
-                                    {...volunteering}
+                                    {...work}
                                     />
                                 )
                             })
