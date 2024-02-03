@@ -51,7 +51,7 @@ export const Banner = () => {
                         <p>I am a 5th year Computer Science student at TorontoMet University. I am very involved in both the student and tech communities, having co-chaired Canada's largest student-led conference with a team of 40+ members! I also enjoy participating at hackathons, where I can meet new hackers and create cool projects in a fun space. Fun fact about me is that I'm quite interested in Economics, and I just finished all my requirements for a minor at TMU. I am looking for 2024 Spring/Summer full time opportunities. Feel feel to connect or reach out!</p>
                         <button onClick={() => window.location.href = '#connect'}>Send a Message<ArrowRightCircle size={25}></ArrowRightCircle> </button>
                     </Col>
-                    <Col xs={5} md={6} xl={5}>
+                    <Col xs={4} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" class="image-fluid" />
                     </Col>
                 </Row>
